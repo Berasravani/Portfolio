@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Course Portfolio</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgb(235, 222, 135);
+            color: black;
+        }
+        header {
+           
+            text-align: center;
+        }
+        .course {
+            text-align: center;
+            margin: 20px;
+            display: none; /* Hide all certificates initially */
+        }
+
+        .course img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+       
+    </style>
+</head>
+<body>
+
+<h1>My Skills</h1>
+<ul>
+    <li><a href="Homepage.html">HOME</a></li>
+    <li><a href="Project.html">PROJECT</a></li>
+    <li><a href="skills.html">SKILLS</a></li>
+    <li><a href="About.html">ABOUT</a></li>
+</ul>
+
+<div class="course">
+    <h2>Introduction to Python</h2>
+    <img src="\static\c7.jpg" alt="Certificate for Course Name 2">
+</div>
+
+<div class="course">
+    <h2>Basics of Python</h2>
+    <img src="\static\c3.jpg" alt="Certificate for Course Name 1">
+</div>
+
+<div class="course">
+    <h2>Introduction to HTML</h2>
+    <img src="\static\c1.jpg" alt="Certificate for Course Name 2">
+</div>
+
+<div class="course">
+    <h2>HTML and CSS</h2>
+    <img src="\static\c2.jpg" alt="Certificate for Course Name 3">
+</div>
+
+<div class="course">
+    <h2>CSS</h2>
+    <img src="\static\c4.jpg" alt="Certificate for Course Name 3">
+</div>
+
+<div class="course">
+    <h2>FAKE NEWS PREDICTION</h2>
+    <img src="\static\c6.jpg" alt="Certificate for Course Name 3">
+</div>
+
+<div class="course">
+    <h2>WINE QUALITY PREDICTION</h2>
+    <img src="\static\c5.jpg" alt="Certificate for Course Name 3">
+</div>
+
+<!-- Add more courses and certificates as needed -->
+
+<div class="controls">
+    <button onclick="showPreviousCertificate()">&#8592; Previous</button>
+    <button onclick="showNextCertificate()">Next &#8594;</button>
+</div>
+
+<script>
+    const certificates = document.querySelectorAll('.course');
+    let currentIndex = 0;
+
+    function showCertificate(index) {
+        if (index >= 0 && index < certificates.length) {
+            certificates[index].style.display = 'block';
+        }
+    }
+
+    function hideCertificate(index) {
+        if (index >= 0 && index < certificates.length) {
+            certificates[index].style.display = 'none';
+        }
+    }
+
+    function showNextCertificate() {
+        hideCertificate(currentIndex);
+        currentIndex = (currentIndex + 1) % certificates.length;
+        showCertificate(currentIndex);
+    }
+
+    function showPreviousCertificate() {
+        hideCertificate(currentIndex);
+        currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
+        showCertificate(currentIndex);
+    }
+
+    showCertificate(currentIndex);
+</script>
+
+</body>
+</html>

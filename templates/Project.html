@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+    <style>
+        body {
+            background: rgb(60,163,86);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #header {
+            width: 100;
+            height: 100;
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            padding: 1px 10%;
+            text-align: center;
+        }
+
+        .course {
+            text-align: center;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /* Style for navigation links */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Display the navigation links horizontally */
+        }
+
+        nav ul li {
+            margin-right: 20px; /* Add some space between each navigation link */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Style for image zoom effect */
+        .zoom {
+            transition: transform .2s; /* Animation for smooth zooming */
+        }
+
+        .zoom:hover {
+            transform: scale(1.5); /* Increase the size of the image on hover */
+        }
+
+        /* Style for side-by-side images */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+            justify-content: center; /* Center the images horizontally */
+        }
+
+        .image-container a {
+            margin: 10px; /* Adjust the spacing between images */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joy Mart</h1>
+        <!-- Navigation links arranged horizontally -->
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Project.html">PROJECT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Description</h1>
+        <p>Joy Mart is your one-stop online store, offering a wide variety of products to cater to your every need. <br>From electronics to fashion, home essentials to beauty products,
+            we have it all under one virtual roof.<br> Explore a world of convenience and joy as you shop at Joy Mart, where your shopping desires are just a click away.
+        </p>
+    </section>
+
+    <section class="container">
+        <h2>Features</h2>
+        <ul>
+            <li>Easy to use.</li>
+            <li>User-Friendly Website.</li>
+            <li>Secure Payment Options.</li>
+            <li>Fast and Reliable Shipping.</li>
+            <li>Customer Reviews and Ratings.</li>
+            <li>Wishlist and Favorites.</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2>Project Pages</h2>
+        <!-- Side-by-side images -->
+        <div class="image-container">
+            <a href="\static\p1.jpg" class="zoom" target="_blank"><img src="\static\p1.jpg" alt="Screenshot 1" width="400" height="300"></a>
+            <a href="\static\p2.jpg" class="zoom" target="_blank"><img src="\static\p2.jpg" alt="Screenshot 2" width="400" height="300"></a>
+            <a href="\static\p3.jpg" class="zoom" target="_blank"><img src="\static\p3.jpg" alt="Screenshot 3" width="400" height="300"></a>
+            <a href="\static\p4.jpg" class="zoom" target="_blank"><img src="\static\p4.jpg" alt="Screenshot 4" width="400" height="300"></a>
+            <a href="\static\p7.jpg" class="zoom" target="_blank"><img src="\static\p7.jpg" alt="Screenshot 1" width="400" height="300"></a>
+            <a href="\static\p8.jpg" class="zoom" target="_blank"><img src="\static\p8.jpg" alt="Screenshot 1" width="400" height="300"></a>
+            <a href="\static\p9.jpg" class="zoom" target="_blank"><img src="\static\p9.jpg" alt="Screenshot 1" width="400" height="300"></a>
+            <a href="\static\p10.jpg" class="zoom" target="_blank"><img src="\static\p10.jpg" alt="Screenshot 1" width="400" height="300"></a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Flask</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2>Demo</h2>
+        <a href="https://www.linkedin.com/in/sivani-batchu-859217289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Live Demo</a>
+    </section>
+
+    <script>
+        // You can add any JavaScript functions or code here if needed.
+    </script>
+</body>
+</html>
+
+
+
+
